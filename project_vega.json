@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "My interactive chart",
+  "title": "กราฟ Stacked Bar แสดงปริมาณมูลฝอยตั้งแต่เดือนตุลาคม พ.ศ.2560 ถึง เดือนกันยายน พ.ศ.2561",
+  "width": 800,
+  "height":400,
+  "config": {
+      "view": {
+          "strokeWidth": 1,
+          "step": 20
+              }
+            },
+  "data": {"url": "https://raw.githubusercontent.com/ThirawatBan/VegaAssignment2-/master/inf_%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%B2%E0%B8%93%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%9D%E0%B8%AD%E0%B8%A261_ver3.csv"},
+  "selection": {
+    "pts": {
+      "type": "single"
+    }
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {"field": "month_year","type": "nominal","title": "เวลา (ปี-เดือน)"},
+    "x": {"aggregate":"sum","field":"value","type": "quantitative","title": "ปริมาณมูลฝอย"},
+    "color": {
+      "condition": {
+        "selection": "pts",
+        "field": "dname", "type": "nominal","title": "เขต"
+      },
+      "value": "grey"
+    },
+     "tooltip": [{ "field": "dcode","type": "ordinal"},
+                 { "field": "dname","type": "nominal","title": "เขต"},
+                 { "field": "value", "type": "quantitative","title": "ปริมาณ"}]
+  }
+}
