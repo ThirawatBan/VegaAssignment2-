@@ -10,8 +10,7 @@
           "step": 20
               }
             },
-  "data": {"url": "https://raw.githubusercontent.com/ThirawatBan/VegaAssignment2-/master/inf_%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%B2%E0%B8%93%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%9D%E0%B8%AD%E0%B8%A261_ver3.csv"},
-  "selection": {
+  "data": {"url": "https://raw.githubusercontent.com/ThirawatBan/VegaAssignment2-/master/inf_%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%B2%E0%B8%93%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%9D%E0%B8%AD%E0%B8%A261_ver5.csv": {
     "pts": {
       "type": "single"
     }
